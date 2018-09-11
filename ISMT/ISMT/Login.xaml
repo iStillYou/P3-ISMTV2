@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ISMT.Login" BackgroundImage="bg.png">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40*" />
+                <RowDefinition Height="35*" />
+                <RowDefinition Height="25*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+
+
+            <!-- Layout do ecrã -->
+            <AbsoluteLayout HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="0" VerticalOptions="Fill" >
+
+
+                <Image Source="menu.png" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0.05,0.25, 0.1 ,0.1">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="MasterDetailButton_Pressed" />
+                    </Image.GestureRecognizers>
+
+                </Image>
+                <!-- Logotipo ISMT -->
+                <Image AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0.5, 0.55, 0.7, 0.7"
+            Source="logotipo.png" Aspect="AspectFit" />
+
+
+
+            </AbsoluteLayout>
+
+            <StackLayout HorizontalOptions="Fill" Grid.Row="1" Grid.Column="0" Margin="30,0,30,0">
+
+                <Label Text="Login" FontSize="14" HorizontalTextAlignment="Center" TextColor="White" Margin="0,20,0,0">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Raleway-Light" />
+                            <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+
+                <Frame CornerRadius="30" VerticalOptions="End" BackgroundColor="#A4D1FF" x:Name="Utilizadorframe" IsClippedToBounds="True" Padding="5" Margin="0,20,0,10">
+                    <Entry x:Name="Utilizador" Placeholder="Utilizador" TextColor="White">
+                        
+                    </Entry>
+                </Frame>
+
+                <Frame CornerRadius="30" VerticalOptions="End" BackgroundColor="#A4D1FF" x:Name="Passwordframe" IsClippedToBounds="True" Padding="5" Margin="0,10,0,20">
+                    <Entry x:Name="Password" Placeholder="Password" IsPassword="True" TextColor="White">
+
+                    </Entry>
+                </Frame>
+
+            </StackLayout>
+            <StackLayout VerticalOptions="Center" Grid.Row="2" Grid.Column="0" Margin="30,0,30,10">
+                <Button Text="Entrar" x:Name="btnlogin" Clicked="login" CornerRadius="30" BackgroundColor="#D6F3FF" Margin="10"  TextColor="#8FACD5" HorizontalOptions="FillAndExpand">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Raleway-Light" />
+                            <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+                <Label VerticalOptions="End" Text="Esqueceu a sua password?" HorizontalTextAlignment="Center" TextColor="White">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Raleway-Light" />
+                            <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+            </StackLayout>
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>

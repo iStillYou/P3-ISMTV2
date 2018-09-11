@@ -1,0 +1,438 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ISMT.Menu">
+    
+    <!--this is the Menu Hamburger sidebar -->
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu"  BackgroundColor="#05408E">
+
+            <StackLayout Orientation="Vertical" VerticalOptions="Start" Margin="5">
+
+
+                <StackLayout VerticalOptions="FillAndExpand"
+                                             Orientation="Horizontal"
+            
+                                             Spacing="20">
+
+                    <Image Source="logoopcoes"
+                                           WidthRequest="50"
+                                           HeightRequest="50"
+                                           VerticalOptions="Center" />
+
+                    <Label Text="Ínicio"
+                                           FontSize="Medium"
+                                           VerticalOptions="Center"
+                                           TextColor="White">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Button_Clicked_Home"/>
+                        </Label.GestureRecognizers>
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Light" />
+                                <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                </StackLayout>
+                
+
+                <StackLayout VerticalOptions="FillAndExpand"
+                                             Orientation="Horizontal"
+                                   
+                                             Spacing="20">
+
+                                    <Image Source="logoevento"
+                                           WidthRequest="50"
+                                           HeightRequest="50"
+                                           VerticalOptions="Center" />
+
+                    <Label Text="Eventos"
+                                           FontSize="Medium"
+                                           VerticalOptions="Center"
+                                           TextColor="White">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Button_Clicked_Evento"/>
+                        </Label.GestureRecognizers>
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Light" />
+                                <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                </StackLayout>
+
+
+                                <StackLayout VerticalOptions="FillAndExpand"
+                                             Orientation="Horizontal"
+                            
+                                             Spacing="20">
+
+                                    <Image Source="logoemprego"
+                                           WidthRequest="50"
+                                           HeightRequest="50"
+                                           VerticalOptions="Center" />
+
+                                <Label Text="Propostas de Emprego"
+                                           FontSize="Medium"
+                                           VerticalOptions="Center"
+                                           TextColor="White">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Button_Clicked_Emprego"/>
+                        </Label.GestureRecognizers>
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Light" />
+                                <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                            </StackLayout>
+
+
+                                <StackLayout VerticalOptions="FillAndExpand"
+                                             Orientation="Horizontal"
+                                           
+                                             Spacing="20">
+
+                                    <Image Source="logonoticias"
+                                           WidthRequest="50"
+                                           HeightRequest="50"
+                                           VerticalOptions="Center" />
+
+                    <Label Text="Notícias"
+                                           FontSize="Medium"
+                                           VerticalOptions="Center"
+                                           TextColor="White">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Button_Clicked_Noticias"/>
+                        </Label.GestureRecognizers>
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Light" />
+                                <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                </StackLayout>
+
+
+                                <StackLayout VerticalOptions="FillAndExpand"
+                                             Orientation="Horizontal"
+                               
+                                             Spacing="20">
+
+                                    <Image Source="logocurso"
+                                           WidthRequest="50"
+                                           HeightRequest="50"
+                                           VerticalOptions="Center" />
+
+                    <Label Text="O Curso"
+                                           FontSize="Medium"
+                                           VerticalOptions="Center"
+                                           TextColor="White">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Button_Clicked_Curso"/>
+                        </Label.GestureRecognizers>
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Light" />
+                                <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                </StackLayout>
+
+
+                                <StackLayout VerticalOptions="FillAndExpand"
+                                             Orientation="Horizontal"
+                                 
+                                             Spacing="20">
+
+                                    <Image Source="logoaviso"
+                                           WidthRequest="50"
+                                           HeightRequest="50"
+                                           VerticalOptions="Center" />
+
+                    <Label Text="Avisos"
+                                           FontSize="Medium"
+                                           VerticalOptions="Center"
+                                           TextColor="White">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Button_Clicked_Aviso"/>
+                        </Label.GestureRecognizers>
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Light" />
+                                <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                </StackLayout>
+
+
+                                <StackLayout VerticalOptions="FillAndExpand"
+                                             Orientation="Horizontal"
+                                        
+                                             Spacing="20">
+
+                                    <Image Source="logoopcoes"
+                                           WidthRequest="50"
+                                           HeightRequest="50"
+                                           VerticalOptions="Center" />
+
+                    <Label Text="Opções"
+                                           FontSize="Medium"
+                                           VerticalOptions="Center"
+                                           TextColor="White">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Button_Clicked_Opcoes"/>
+                        </Label.GestureRecognizers>
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Light" />
+                                <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+
+                    </Label>
+                </StackLayout>
+
+                                <StackLayout VerticalOptions="FillAndExpand"
+                                             Orientation="Horizontal"
+                                           
+                                             Spacing="20">
+
+                                    <Image Source="logoopcoes"
+                                           WidthRequest="50"
+                                           HeightRequest="50"
+                                           VerticalOptions="Center" />
+
+                    <Label Text="Contactos Gerais"
+                                           FontSize="Medium"
+                                           VerticalOptions="Center"
+                                           TextColor="White">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Button_Clicked_Contacto"/>
+                        </Label.GestureRecognizers>
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Light" />
+                                <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+
+                    </Label>
+                </StackLayout>
+
+                                <StackLayout VerticalOptions="FillAndExpand"
+                                             Orientation="Horizontal"
+                                     
+                                             Spacing="20">
+
+                    <Label  WidthRequest="50"
+                                           HeightRequest="50"
+                                           FontSize="Medium"
+                                           VerticalOptions="Center"
+                                           TextColor="White"/>
+
+                    <Label Text="Login" x:Name="loginname"
+                                           FontSize="Medium"
+                                           VerticalOptions="Center"
+                                           TextColor="White">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Button_Clicked_Login"/>
+                        </Label.GestureRecognizers>
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Light" />
+                                <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                </StackLayout>
+
+
+                <StackLayout VerticalOptions="FillAndExpand" 
+                                             Orientation="Horizontal"
+                                     
+                                             Spacing="20" >
+
+                    <Label  WidthRequest="50" x:Name="prof1"
+                                           HeightRequest="50"
+                                           FontSize="Medium"
+                                           VerticalOptions="Center"
+                                           TextColor="White" IsVisible="False"/>
+
+                    <Label Text="Menu Professores"
+                           IsVisible="False" x:Name="prof2"
+                                           FontSize="Medium"
+                                           VerticalOptions="Center"
+                                           TextColor="White">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Button_Clicked_Professor"/>
+                        </Label.GestureRecognizers>
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Light" />
+                                <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+                </StackLayout>
+
+
+
+                <!--
+                <AbsoluteLayout>
+                    <Image Source="menu_close.png" AbsoluteLayout.LayoutFlags="All" HorizontalOptions="Start" AbsoluteLayout.LayoutBounds="0.1,0.4,0.4,0.4">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="closemenu"/>
+                        </Image.GestureRecognizers>
+                    </Image>
+
+                </AbsoluteLayout>
+
+                <Label Text="Ínicio" TextColor="White"  Margin="0,15,0,15" HorizontalTextAlignment="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Button_Clicked_Home"/>
+                    </Label.GestureRecognizers>
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Raleway-Light" />
+                            <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+
+                <BoxView HeightRequest="2" Color="#9FD9FF" HorizontalOptions="Fill"/>
+
+                <Label Text="Eventos" TextColor="White"  Margin="0,15,0,15" HorizontalTextAlignment="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Button_Clicked_Evento"/>
+                    </Label.GestureRecognizers>
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Raleway-Light" />
+                            <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+
+                <BoxView HeightRequest="2" Color="#9FD9FF" HorizontalOptions="Fill"/>
+
+                <Label Text="Propostas de Emprego"  Margin="0,15,0,15" TextColor="White" HorizontalTextAlignment="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Button_Clicked_Emprego"/>
+                    </Label.GestureRecognizers>
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Raleway-Light" />
+                            <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+
+                <BoxView HeightRequest="2" Color="#9FD9FF" HorizontalOptions="Fill"/>
+
+                <Label Text="Notícias" TextColor="White"  Margin="0,15,0,15" HorizontalTextAlignment="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Button_Clicked_Noticias"/>
+                    </Label.GestureRecognizers>
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Raleway-Light" />
+                            <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+
+                <BoxView HeightRequest="2" Color="#9FD9FF" HorizontalOptions="Fill"/>
+
+                <Label Text="O Curso" TextColor="White"  Margin="0,15,0,15" HorizontalTextAlignment="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Button_Clicked_Curso"/>
+                    </Label.GestureRecognizers>
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Raleway-Light" />
+                            <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+
+                <BoxView HeightRequest="2" Color="#9FD9FF" HorizontalOptions="Fill"/>
+
+                <Label Text="Avisos" TextColor="White"  Margin="0,15,0,15" HorizontalTextAlignment="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Button_Clicked_Aviso"/>
+                    </Label.GestureRecognizers>
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Raleway-Light" />
+                            <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+
+                <BoxView HeightRequest="2" Color="#9FD9FF" HorizontalOptions="Fill"/>
+
+                <Label Text="Opções" TextColor="White"  Margin="0,15,0,15" HorizontalTextAlignment="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Button_Clicked_Opcoes"/>
+                    </Label.GestureRecognizers>
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Raleway-Light" />
+                            <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+
+                <BoxView HeightRequest="2" Color="#9FD9FF" HorizontalOptions="Fill"/>
+
+                <Label Text="Contactos Gerais" TextColor="White" Margin="0,15,0,15" HorizontalTextAlignment="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Button_Clicked_Contacto"/>
+                    </Label.GestureRecognizers>
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Raleway-Light" />
+                            <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+
+              
+                    <BoxView HeightRequest="2" VerticalOptions="End" Color="#9FD9FF" HorizontalOptions="Fill"/>
+
+                <Label Text="LOGIN/LOGOUT" TextColor="White"  Margin="0,15,0,15" HorizontalTextAlignment="Center">
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Button_Clicked_Login"/>
+                        </Label.GestureRecognizers>
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Raleway-Light" />
+                            <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+                
+                -->
+                
+                </StackLayout>
+                
+            
+            
+            
+            
+        </ContentPage>
+    </MasterDetailPage.Master>
+
+    <!--links to the detail pages from the hamburger sidebar -->
+    <MasterDetailPage.Detail>
+
+    </MasterDetailPage.Detail>
+    
+</MasterDetailPage>

@@ -1,0 +1,64 @@
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\bin\Release\netstandard2.0\ISMT.deps.json
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\bin\Release\netstandard2.0\ISMT.dll
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\bin\Release\netstandard2.0\ISMT.pdb
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.csprojResolveAssemblyReference.cache
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.csproj.CoreCompileInputs.cache
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.App.xaml.g.cs
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.Aviso.xaml.g.cs
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.AvisosId.xaml.g.cs
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.Contacto.xaml.g.cs
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.Curso.xaml.g.cs
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.Emprego.xaml.g.cs
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.Evento.xaml.g.cs
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.info_curso.Acesso.xaml.g.cs
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.info_curso.Docentes.xaml.g.cs
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.info_curso.Exames.xaml.g.cs
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.info_curso.Horarios.xaml.g.cs
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.info_curso.Objectivo.xaml.g.cs
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.info_curso.Plano.xaml.g.cs
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.info_curso.Profissional.xaml.g.cs
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.info_curso.Propinas.xaml.g.cs
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.info_curso.Semestre.xaml.g.cs
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.Login.xaml.g.cs
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.MainPage.xaml.g.cs
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.Menu.xaml.g.cs
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.MenuProfessor.xaml.g.cs
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.NoticiaId.xaml.g.cs
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.Noticias.xaml.g.cs
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.Opcoes.xaml.g.cs
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.AssemblyInfoInputs.cache
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.AssemblyInfo.cs
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.dll
+C:\Users\HP\Documents\Visual Studio 2017\Projects\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.pdb
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\bin\Release\netstandard2.0\ISMT.deps.json
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\bin\Release\netstandard2.0\ISMT.dll
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\bin\Release\netstandard2.0\ISMT.pdb
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.csprojAssemblyReference.cache
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.csproj.CoreCompileInputs.cache
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.App.xaml.g.cs
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.Aviso.xaml.g.cs
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.AvisosId.xaml.g.cs
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.Contacto.xaml.g.cs
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.Curso.xaml.g.cs
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.Emprego.xaml.g.cs
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.Evento.xaml.g.cs
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.info_curso.Acesso.xaml.g.cs
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.info_curso.Docentes.xaml.g.cs
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.info_curso.Exames.xaml.g.cs
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.info_curso.Horarios.xaml.g.cs
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.info_curso.Objectivo.xaml.g.cs
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.info_curso.Plano.xaml.g.cs
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.info_curso.Profissional.xaml.g.cs
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.info_curso.Propinas.xaml.g.cs
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.info_curso.Semestre.xaml.g.cs
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.Login.xaml.g.cs
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.MainPage.xaml.g.cs
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.Menu.xaml.g.cs
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.MenuProfessor.xaml.g.cs
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.NoticiaId.xaml.g.cs
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.Noticias.xaml.g.cs
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.Opcoes.xaml.g.cs
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.AssemblyInfoInputs.cache
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.AssemblyInfo.cs
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.dll
+C:\Users\iStill\Desktop\app-p3\ISMT\ISMT\ISMT\obj\Release\netstandard2.0\ISMT.pdb

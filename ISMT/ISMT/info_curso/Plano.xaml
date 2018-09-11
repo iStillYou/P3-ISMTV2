@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ISMT.info_curso.Plano" BackgroundImage="bg.png">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20*" />
+                <RowDefinition Height="55*" />
+                <RowDefinition Height="25*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+
+
+            <!-- Layout do ecrã -->
+            <AbsoluteLayout HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="0" VerticalOptions="Fill" >
+
+
+                <Image Source="menu.png" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0.02,0.30, 0.2 ,0.2">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="MasterDetailButton_Pressed" />
+                    </Image.GestureRecognizers>
+
+                </Image>
+                <!-- Logotipo ISMT -->
+                <Image AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0.5, 0.55, 0.50, 0.50"
+            Source="logotipo.png" Aspect="AspectFit" />
+
+
+
+            </AbsoluteLayout>
+            <ScrollView HorizontalOptions="Fill" Grid.Row="1" Grid.Column="0" Margin="20,0,20,0">
+
+                <StackLayout>
+                    <Label Text="Planos de estudos" FontSize="14" HorizontalTextAlignment="Center" TextColor="White" Margin="0,20,0,0">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Light" />
+                                <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+
+                    <Label Text="Unidades Curriculares / Tipo / Ects"  FontSize="14" TextColor="White" HorizontalTextAlignment="Start">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Light" />
+                                <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+
+                    <BoxView HeightRequest="1" HorizontalOptions="Fill" Color="#DCDCDC" Margin="0,10,0,10"/>
+
+                    <Label TextColor="White" Text="1º Semestre"
+                       FontSize="12" Margin="10,0,0,0">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Light" />
+                                <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+
+                    <Label TextColor="White" Text="Introdução ao Estudo da Comunicação	S	4&#10;
+Modelos de Narrativa Multimédia e Comunicação Visual	S	4&#10;
+Fundamentos do Design	S	5&#10;
+Introdução à Algoritmia	S	5&#10;
+Fotografia Digital	S	5&#10;
+Análise da Imagem	S	4&#10;
+Opção 1	S	3"
+                       FontSize="12" Margin="20,0,0,0">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Light" />
+                                <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+
+                    <Label TextColor="White" Text="2º Semestre"
+                       FontSize="12" Margin="10,10,0,0">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Light" />
+                                <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+
+                    <Label TextColor="White" Text="Cibercultura	S	5&#10;
+Laboratório Multimédia I	S	5&#10;
+Tratamento de Imagem Digital	S	5&#10;
+Design Gráfico	S	5&#10;
+Teoria da Arte	S	2&#10;
+Programação I	S	5&#10;
+Opção 2	S	3&#10;"
+                       FontSize="12" Margin="20,0,0,0">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Light" />
+                                <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+
+                    <Label TextColor="White" Text="3º Semestre"
+                       FontSize="12" Margin="10,10,0,0">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Light" />
+                                <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+
+                    <Label TextColor="White" Text="Programação II	S	5&#10;
+Design Vectorial	S	4&#10;
+Guionismo para Multimédia	S	5&#10;
+Psicologia da Perceção	S	3&#10;
+Produção Vídeo	S	4&#10;
+Teoria do Som	S	4&#10;
+Laboratório Multimédia II	S	5&#10;"
+                       FontSize="12" Margin="20,0,0,0">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Light" />
+                                <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+
+                    <Label TextColor="White" Text="4º Semestre"
+                       FontSize="12" Margin="10,10,0,0">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Light" />
+                                <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+
+                    <Label TextColor="White" Text="Design Editorial	S	4&#10;
+Desenvolvimento de Jogos Multimédia	S	4&#10;
+Realização Audiovisual	S	4&#10;
+Produção Áudio	S	4&#10;
+Webdesign I	S	4&#10;
+Programação III	S	5&#10;
+Laboratório Multimédia III	S	5&#10;"
+                       FontSize="12" Margin="20,0,0,0">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Light" />
+                                <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+
+                    <Label TextColor="White" Text="5º Semestre"
+                       FontSize="12" Margin="10,10,0,0">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Light" />
+                                <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+
+                    <Label TextColor="White" Text="Animação 3D I	S	5&#10;
+Edição Vídeo Digital	S	6&#10;
+Direito da Comunicação	S	2&#10;
+Indústrias Criativas e Modelos de Negócio	S	2&#10;
+Atelier de Som I	S	5&#10;
+Webdesign II	S	6&#10;
+Laboratório Multimédia IV	S	4&#10;"
+                       FontSize="12" Margin="20,0,0,0">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Light" />
+                                <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+
+                    <Label TextColor="White" Text="6º Semestre"
+                       FontSize="12" Margin="10,10,0,0">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Light" />
+                                <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+
+                    <Label TextColor="White" Text="Animação 3D II	S	6&#10;
+Atelier de Som II	S	6&#10;
+Atelier de Vídeo	S	6&#10;
+Projeto Multimédia 	S	12&#10;"
+                       FontSize="12" Margin="20,0,0,0">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Light" />
+                                <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+
+
+                </StackLayout>
+            </ScrollView>
+
+            <!-- Botão voltar-->
+            <StackLayout VerticalOptions="Center" Grid.Row="2" Grid.Column="0" Margin="30,0,30,0">
+                <Button Text="Voltar" CornerRadius="30" Margin="10" BackgroundColor="#D6F3FF" Clicked="voltarinicio" TextColor="#8FACD5" HorizontalOptions="FillAndExpand">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Raleway-Light" />
+                            <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+            </StackLayout>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

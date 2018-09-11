@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:ISMT"
+             x:Class="ISMT.MainPage" BackgroundImage="bg.png">
+
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="20*" />
+            <RowDefinition Height="80*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+
+        
+        
+        <!-- Layout do ecrã -->
+        <AbsoluteLayout HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="0" VerticalOptions="Fill" >
+
+
+            <Image Source="menu.png" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0.02,0.30, 0.2 ,0.2">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="MasterDetailButton_Pressed" />
+                </Image.GestureRecognizers>
+            </Image>
+            <!-- Logotipo ISMT -->
+            <Image AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0.5, 0.55, 0.50, 0.50"
+            Source="logotipo.png" Aspect="AspectFit" />
+
+
+
+        </AbsoluteLayout>
+
+        <!-- Scroll -->
+        <ScrollView HorizontalOptions="Fill" VerticalOptions="Fill" Grid.Row="1" Grid.Column="0">
+
+            <StackLayout>
+                <Label Text="Últimas Notícias" TextColor="White" Margin="8,0,0,0" FontSize="18">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Raleway-Light" />
+                            <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+
+                <StackLayout x:Name="stackLayout">
+                <!-- Noticias -->
+                    
+                <!--
+                <AbsoluteLayout HorizontalOptions="FillAndExpand">
+
+                    <Image Source="noticia1_sample.png" HeightRequest="172" HorizontalOptions="Fill"/>
+
+                    <BoxView BackgroundColor="#223E7F" Opacity=".38" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0.50,.45,0.96">
+                    </BoxView>
+
+
+                    
+                    <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0.50,.45,0.96" Margin="6,0,6,0">
+                        <Label Text="Quarta-Feira, Junho 27/06/2018" TextColor="White" FontSize="6" Margin="0,8,0,8" >
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String">
+                                    <On Platform="iOS" Value="Raleway-Light" />
+                                    <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                                </OnPlatform>
+                            </Label.FontFamily>
+                        </Label>
+
+                        <Label Text="Militares treinam com jogo do ISMT" TextColor="White" FontSize="13" FontAttributes="Bold" Margin="0,2,0,2">
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String">
+                                    <On Platform="iOS" Value="Raleway-Light" />
+                                    <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                                </OnPlatform>
+                            </Label.FontFamily>
+                        </Label>
+
+                        <Label Text="Militares utilizam como base de treinamento um jogo que  foi desenvolvido no Instituto Superior Miguel Torga..."
+                               TextColor="White" FontSize="10" Margin="0,2,0,10">
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String">
+                                    <On Platform="iOS" Value="Raleway-Light" />
+                                    <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                                </OnPlatform>
+                            </Label.FontFamily>
+                        </Label>
+
+                        <Label Text="Saiba mais" TextColor="White" FontSize="10" VerticalTextAlignment="Center" HorizontalOptions="Center">
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String">
+                                    <On Platform="iOS" Value="Raleway-Light" />
+                                    <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                                </OnPlatform>
+                            </Label.FontFamily>
+                        </Label>
+                        
+                    </StackLayout>
+                    
+                </AbsoluteLayout>
+
+                <AbsoluteLayout HorizontalOptions="FillAndExpand">
+
+                    <Image Source="noticia1_sample.png" HeightRequest="172" HorizontalOptions="Fill"/>
+
+                    <BoxView BackgroundColor="#223E7F" Opacity=".38" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="1,0.50,.45,0.96">
+                    </BoxView>
+
+
+                    
+                    <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="1,0.58,.45,0.96" Margin="6,0,6,0">
+                        <Label Text="Quarta-Feira, Junho 27/06/2018" TextColor="White" FontSize="6" Margin="0,8,0,8" >
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String">
+                                    <On Platform="iOS" Value="Raleway-Light" />
+                                    <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                                </OnPlatform>
+                            </Label.FontFamily>
+                        </Label>
+
+                        <Label Text="Militares treinam com jogo do ISMT" TextColor="White" FontSize="13" FontAttributes="Bold" Margin="0,2,0,2">
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String">
+                                    <On Platform="iOS" Value="Raleway-Light" />
+                                    <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                                </OnPlatform>
+                            </Label.FontFamily>
+                        </Label>
+
+                        <Label Text="Militares utilizam como base de treinamento um jogo que  foi desenvolvido no Instituto Superior Miguel Torga..."
+                               TextColor="White" FontSize="10" Margin="0,2,0,10">
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String">
+                                    <On Platform="iOS" Value="Raleway-Light" />
+                                    <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                                </OnPlatform>
+                            </Label.FontFamily>
+                        </Label>
+
+                        <Label Text="Saiba mais" TextColor="White" FontSize="10" VerticalTextAlignment="Center" HorizontalOptions="Center">
+                            <Label.FontFamily>
+                                <OnPlatform x:TypeArguments="x:String">
+                                    <On Platform="iOS" Value="Raleway-Light" />
+                                    <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                                </OnPlatform>
+                            </Label.FontFamily>
+                        </Label>
+                        
+                    </StackLayout>
+                    
+                </AbsoluteLayout> -->
+                </StackLayout>
+
+                <BoxView HeightRequest="3" Color="#5AA3F6"  Margin="140,20,140,20"/>
+                
+
+                <!-- Menu principal -->
+                <Grid Margin="0,0,0,40">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+
+
+                    <Frame BackgroundColor="#8CC4FC" x:Name="botaoevento" CornerRadius="22" Grid.Row="0" Grid.Column="0" Margin="35,0,5,0">
+                        <Image Source="logoevento.png" >
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="irevento" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Frame>
+
+                    <Frame BackgroundColor="#8CC4FC" x:Name="botaoemprego" CornerRadius="22" Grid.Row="0" Grid.Column="1" Margin="5,0,35,0">
+                        <Image Source="logoemprego.png">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="iremprego" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Frame>
+
+                    <Frame BackgroundColor="#8CC4FC" x:Name="botaonoticias" CornerRadius="22" Grid.Row="1" Grid.Column="0" Margin="35,5,5,0">
+                        <Image Source="logonoticias.png">
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="irnoticias" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                    </Frame>
+
+                    <Frame BackgroundColor="#8CC4FC" x:Name="botaocurso" CornerRadius="22" Grid.Row="1" Grid.Column="1" Margin="5,5,35,0">
+                        <Image Source="logocurso.png" >
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="ircurso" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                      
+                    </Frame>
+
+                    <Frame BackgroundColor="#8CC4FC" x:Name="botaoaviso" CornerRadius="22" Grid.Row="2" Grid.Column="0" Margin="35,5,5,0">
+                        <Image Source="logoaviso.png" >
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="iraviso" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                       
+                    </Frame>
+
+                    <Frame BackgroundColor="#8CC4FC" x:Name="botaoopcoes" CornerRadius="22" Grid.Row="2" Grid.Column="1" Margin="5,5,35,0">
+                        <Image Source="logoopcoes.png" >
+                            <Image.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="iropcoes" />
+                            </Image.GestureRecognizers>
+                        </Image>
+                        
+                    </Frame>
+                    
+                </Grid>
+
+            </StackLayout>
+
+        </ScrollView>
+    </Grid>
+
+</ContentPage>

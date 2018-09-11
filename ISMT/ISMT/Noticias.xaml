@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ISMT.Noticias" BackgroundImage="bg.png">
+    <ContentPage.Content>
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20*" />
+                <RowDefinition Height="55*" />
+                <RowDefinition Height="25*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+
+
+            <!-- Layout do ecrã -->
+            <AbsoluteLayout HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="0" VerticalOptions="Fill" >
+
+
+                <Image Source="menu.png" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0.02,0.30, 0.2 ,0.2">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="MasterDetailButton_Pressed" />
+                    </Image.GestureRecognizers>
+
+                </Image>
+                <!-- Logotipo ISMT -->
+                <Image AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0.5, 0.55, 0.50, 0.50"
+            Source="logotipo.png" Aspect="AspectFit" />
+
+
+
+            </AbsoluteLayout>
+
+            <ScrollView HorizontalOptions="Fill" VerticalOptions="Fill" Grid.Row="1" Grid.Column="0">
+
+                <StackLayout x:Name="stackLayout">
+                    <Label Text="Notícias" FontSize="14" TextColor="White" HorizontalTextAlignment="Center">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Light" />
+                                <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+
+                    <Label Text="Últimas Notícias" TextColor="White" Margin="8,0,0,0" FontSize="18">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Light" />
+                                <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+
+                    <!-- Noticias -->
+                    
+                    <!--
+                    <AbsoluteLayout HorizontalOptions="FillAndExpand">
+
+                        <Image Source="noticia1_sample.png" HeightRequest="172" HorizontalOptions="Fill"/>
+
+                        <BoxView BackgroundColor="#223E7F" Opacity=".38" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0.50,.45,0.96">
+                        </BoxView>
+
+
+
+                        <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0.50,.45,0.96" Margin="6,0,6,0">
+                            <Label Text="Quarta-Feira, Junho 27/06/2018" TextColor="White" FontSize="6" Margin="0,8,0,8" >
+                                <Label.FontFamily>
+                                    <OnPlatform x:TypeArguments="x:String">
+                                        <On Platform="iOS" Value="Raleway-Light" />
+                                        <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                                    </OnPlatform>
+                                </Label.FontFamily>
+                            </Label>
+
+                            <Label Text="Militares treinam com jogo do ISMT" TextColor="White" FontSize="13" FontAttributes="Bold" Margin="0,2,0,2">
+                                <Label.FontFamily>
+                                    <OnPlatform x:TypeArguments="x:String">
+                                        <On Platform="iOS" Value="Raleway-Light" />
+                                        <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                                    </OnPlatform>
+                                </Label.FontFamily>
+                            </Label>
+
+                            <Label Text="Militares utilizam como base de treinamento um jogo que  foi desenvolvido no Instituto Superior Miguel Torga..."
+                               TextColor="White" FontSize="10" Margin="0,2,0,10">
+                                <Label.FontFamily>
+                                    <OnPlatform x:TypeArguments="x:String">
+                                        <On Platform="iOS" Value="Raleway-Light" />
+                                        <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                                    </OnPlatform>
+                                </Label.FontFamily>
+                            </Label>
+
+                            <Label Text="Saiba mais" TextColor="White" FontSize="10" VerticalTextAlignment="Center" HorizontalOptions="Center">
+                                <Label.FontFamily>
+                                    <OnPlatform x:TypeArguments="x:String">
+                                        <On Platform="iOS" Value="Raleway-Light" />
+                                        <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                                    </OnPlatform>
+                                </Label.FontFamily>
+                            </Label>
+
+                        </StackLayout>
+
+                    </AbsoluteLayout>
+
+                    <AbsoluteLayout HorizontalOptions="FillAndExpand">
+
+                        <Image Source="noticia1_sample.png" HeightRequest="172" HorizontalOptions="Fill"/>
+
+                        <BoxView BackgroundColor="#223E7F" Opacity=".38" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="1,0.50,.45,0.96">
+                        </BoxView>
+
+
+
+                        <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="1,0.58,.45,0.96" Margin="6,0,6,0">
+                            <Label Text="Quarta-Feira, Junho 27/06/2018" TextColor="White" FontSize="6" Margin="0,8,0,8" >
+                                <Label.FontFamily>
+                                    <OnPlatform x:TypeArguments="x:String">
+                                        <On Platform="iOS" Value="Raleway-Light" />
+                                        <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                                    </OnPlatform>
+                                </Label.FontFamily>
+                            </Label>
+
+                            <Label Text="Militares treinam com jogo do ISMT" TextColor="White" FontSize="13" FontAttributes="Bold" Margin="0,2,0,2">
+                                <Label.FontFamily>
+                                    <OnPlatform x:TypeArguments="x:String">
+                                        <On Platform="iOS" Value="Raleway-Light" />
+                                        <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                                    </OnPlatform>
+                                </Label.FontFamily>
+                            </Label>
+
+                            <Label Text="Militares utilizam como base de treinamento um jogo que  foi desenvolvido no Instituto Superior Miguel Torga..."
+                               TextColor="White" FontSize="10" Margin="0,2,0,10">
+                                <Label.FontFamily>
+                                    <OnPlatform x:TypeArguments="x:String">
+                                        <On Platform="iOS" Value="Raleway-Light" />
+                                        <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                                    </OnPlatform>
+                                </Label.FontFamily>
+                            </Label>
+
+                            <Label Text="Saiba mais" TextColor="White" FontSize="10" VerticalTextAlignment="Center" HorizontalOptions="Center">
+                                <Label.FontFamily>
+                                    <OnPlatform x:TypeArguments="x:String">
+                                        <On Platform="iOS" Value="Raleway-Light" />
+                                        <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                                    </OnPlatform>
+                                </Label.FontFamily>
+                            </Label>
+
+                        </StackLayout>
+
+                    </AbsoluteLayout>
+
+                    <AbsoluteLayout HorizontalOptions="FillAndExpand">
+
+                        <Image Source="noticia1_sample.png" HeightRequest="172" HorizontalOptions="Fill"/>
+
+                        <BoxView BackgroundColor="#223E7F" Opacity=".38" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0.50,.45,0.96">
+                        </BoxView>
+
+
+
+                        <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0,0.50,.45,0.96" Margin="6,0,6,0">
+                            <Label Text="Quarta-Feira, Junho 27/06/2018" TextColor="White" FontSize="6" Margin="0,8,0,8" >
+                                <Label.FontFamily>
+                                    <OnPlatform x:TypeArguments="x:String">
+                                        <On Platform="iOS" Value="Raleway-Light" />
+                                        <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                                    </OnPlatform>
+                                </Label.FontFamily>
+                            </Label>
+
+                            <Label Text="Militares treinam com jogo do ISMT" TextColor="White" FontSize="13" FontAttributes="Bold" Margin="0,2,0,2">
+                                <Label.FontFamily>
+                                    <OnPlatform x:TypeArguments="x:String">
+                                        <On Platform="iOS" Value="Raleway-Light" />
+                                        <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                                    </OnPlatform>
+                                </Label.FontFamily>
+                            </Label>
+
+                            <Label Text="Militares utilizam como base de treinamento um jogo que  foi desenvolvido no Instituto Superior Miguel Torga..."
+                               TextColor="White" FontSize="10" Margin="0,2,0,10">
+                                <Label.FontFamily>
+                                    <OnPlatform x:TypeArguments="x:String">
+                                        <On Platform="iOS" Value="Raleway-Light" />
+                                        <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                                    </OnPlatform>
+                                </Label.FontFamily>
+                            </Label>
+
+                            <Label Text="Saiba mais" TextColor="White" FontSize="10" VerticalTextAlignment="Center" HorizontalOptions="Center">
+                                <Label.FontFamily>
+                                    <OnPlatform x:TypeArguments="x:String">
+                                        <On Platform="iOS" Value="Raleway-Light" />
+                                        <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                                    </OnPlatform>
+                                </Label.FontFamily>
+                            </Label>
+
+                        </StackLayout>
+
+                    </AbsoluteLayout>
+
+                    <AbsoluteLayout HorizontalOptions="FillAndExpand">
+
+                        <Image Source="noticia1_sample.png" HeightRequest="172" HorizontalOptions="Fill"/>
+
+                        <BoxView BackgroundColor="#223E7F" Opacity=".38" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="1,0.50,.45,0.96">
+                        </BoxView>
+
+
+
+                        <StackLayout AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="1,0.58,.45,0.96" Margin="6,0,6,0">
+                            <Label Text="Quarta-Feira, Junho 27/06/2018" TextColor="White" FontSize="6" Margin="0,8,0,8" >
+                                <Label.FontFamily>
+                                    <OnPlatform x:TypeArguments="x:String">
+                                        <On Platform="iOS" Value="Raleway-Light" />
+                                        <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                                    </OnPlatform>
+                                </Label.FontFamily>
+                            </Label>
+
+                            <Label Text="Militares treinam com jogo do ISMT" TextColor="White" FontSize="13" FontAttributes="Bold" Margin="0,2,0,2">
+                                <Label.FontFamily>
+                                    <OnPlatform x:TypeArguments="x:String">
+                                        <On Platform="iOS" Value="Raleway-Light" />
+                                        <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                                    </OnPlatform>
+                                </Label.FontFamily>
+                            </Label>
+
+                            <Label Text="Militares utilizam como base de treinamento um jogo que  foi desenvolvido no Instituto Superior Miguel Torga..."
+                               TextColor="White" FontSize="10" Margin="0,2,0,10">
+                                <Label.FontFamily>
+                                    <OnPlatform x:TypeArguments="x:String">
+                                        <On Platform="iOS" Value="Raleway-Light" />
+                                        <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                                    </OnPlatform>
+                                </Label.FontFamily>
+                            </Label>
+
+                            <Label Text="Saiba mais" TextColor="White" FontSize="10" VerticalTextAlignment="Center" HorizontalOptions="Center">
+                                <Label.FontFamily>
+                                    <OnPlatform x:TypeArguments="x:String">
+                                        <On Platform="iOS" Value="Raleway-Light" />
+                                        <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                                    </OnPlatform>
+                                </Label.FontFamily>
+                            </Label>
+
+                        </StackLayout>
+
+                    </AbsoluteLayout> -->
+
+                </StackLayout>
+            </ScrollView>
+
+            <StackLayout VerticalOptions="Center" Grid.Row="2" Grid.Column="0" Margin="30,0,30,10">
+                <Button Text="Voltar" CornerRadius="30" BackgroundColor="#D6F3FF" Margin="10" Clicked="voltarinicio" TextColor="#8FACD5" HorizontalOptions="FillAndExpand">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Raleway-Light" />
+                            <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+            </StackLayout>
+
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>

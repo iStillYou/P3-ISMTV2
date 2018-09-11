@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ISMT.info_curso.Objectivo" BackgroundImage="bg.png">
+    <ContentPage.Content>
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20*" />
+                <RowDefinition Height="55*" />
+                <RowDefinition Height="25*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+
+
+            <!-- Layout do ecrã -->
+            <AbsoluteLayout HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="0" VerticalOptions="Fill" >
+
+
+                <Image Source="menu.png" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0.02,0.30, 0.2 ,0.2">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="MasterDetailButton_Pressed" />
+                    </Image.GestureRecognizers>
+
+                </Image>
+                <!-- Logotipo ISMT -->
+                <Image AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0.5, 0.55, 0.50, 0.50"
+            Source="logotipo.png" Aspect="AspectFit" />
+
+
+
+            </AbsoluteLayout>
+            <!-- Conteúdo -->
+            <ScrollView HorizontalOptions="Fill" Grid.Row="1" Grid.Column="0" Margin="20,0,20,0">
+
+                <StackLayout>
+                <Label Text="Objectivos do Curso" FontSize="14" HorizontalTextAlignment="Center" TextColor="White" Margin="0,20,0,0">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Raleway-Light" />
+                            <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+
+                <Label Text="Objectivos"  FontSize="14" TextColor="White" HorizontalTextAlignment="Start">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Raleway-Light" />
+                            <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+
+                <BoxView HeightRequest="1" HorizontalOptions="Fill" Color="#DCDCDC" Margin="0,10,0,10"/>
+
+                <Label TextColor="White" HorizontalTextAlignment="Start" Text="São objetivos desta licenciatura capacitar os diplomados com as ferramentas e competências para:"
+                       FontSize="12" Margin="10,0,0,0">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Raleway-Light" />
+                            <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+
+                    <Label TextColor="White" HorizontalTextAlignment="Start" Text="interpretar e construir com rigor semântico enunciados orais e escritos adequados a diferentes suportes e contextos; &#10;
+                       &#10;desenvolver a capacidade de inovar, denotando criatividade, em diferentes situações de comunicação; &#10;
+                       &#10;exercitar a capacidade de crítica e de auto-crítica em situações profissionais;&#10;
+&#10;identificar noções de Sociedade da Informação, Globalização, Rede;&#10;
+&#10;conhecer a legislação que regulamenta a Comunicação;&#10;
+&#10;reconhecer o processo da comunicação e os processos sensoriais inerentes a este; conhecer e aplicar ferramentas das Tecnologias da Informação e Comunicação;&#10;
+&#10;apreender técnicas e modelos em design gráfico e vectorial;&#10;
+&#10;conhecer e aplicar princípios técnicos específicos de Audiovisuais nas áreas de Produção e Realização;&#10;
+&#10;dominar princípios e técnicas de programação informática;&#10;
+&#10;conhecer princípios teóricos e aplicar técnicas de Fotografia;&#10;
+&#10;conhecer princípios teóricos e aplicar técnicas de Sonoplastia;&#10;
+&#10;produzir conteúdos Web;&#10;
+&#10;aplicar instrumentos de comunicação gráfica;&#10;
+&#10;apreender e aplicar conteúdos sobre cenografia virtual e animação;&#10;
+&#10;distinguir e aplicar técnicas do argumento/guionismo para Multimédia e Audiovisual;&#10;
+&#10;possuir conhecimentos sobre análise de sistemas e bases de dados;&#10;
+&#10;compreender distintas interações sócio-culturais no Ciberespaço;"
+                       FontSize="12" Margin="20,0,0,0">
+                    <Label.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Raleway-Light" />
+                            <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                        </OnPlatform>
+                    </Label.FontFamily>
+                </Label>
+
+                </StackLayout>
+            </ScrollView>
+
+            <!-- Botão voltar-->
+            <StackLayout VerticalOptions="Center" Grid.Row="2" Grid.Column="0" Margin="30,0,30,0">
+                <Button Text="Voltar" CornerRadius="30" Margin="10" BackgroundColor="#D6F3FF" Clicked="voltarinicio" TextColor="#8FACD5" HorizontalOptions="FillAndExpand">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Raleway-Light" />
+                            <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+            </StackLayout>
+
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>

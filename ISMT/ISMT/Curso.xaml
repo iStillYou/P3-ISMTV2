@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ISMT.Curso" BackgroundImage="bg.png">
+    <ContentPage.Content>
+        
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20*" />
+                <RowDefinition Height="55*" />
+                <RowDefinition Height="25*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+
+
+            <!-- Layout do ecrã -->
+            <AbsoluteLayout HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="0" VerticalOptions="Fill" >
+
+
+                <Image Source="menu.png" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0.02,0.30, 0.2 ,0.2">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="MasterDetailButton_Pressed" />
+                    </Image.GestureRecognizers>
+
+                </Image>
+                <!-- Logotipo ISMT -->
+                <Image AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0.5, 0.55, 0.50, 0.50"
+            Source="logotipo.png" Aspect="AspectFit" />
+            </AbsoluteLayout>
+
+            
+            <StackLayout Grid.Column="0" Grid.Row="1" >
+                <ScrollView>
+                    <StackLayout x:Name="stacklayout">
+                <Image Source="curso_objectivo" x:Name="objectivo">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="irobjectivo" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image Source="curso_profissional" x:Name="profissional">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="irprofissional" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image Source="curso_plano" x:Name="plano">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="irplano" />
+                    </Image.GestureRecognizers>
+                </Image>
+
+                <Image Source="curso_acesso" x:Name="acesso">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="iracesso" />
+                    </Image.GestureRecognizers>
+                </Image>
+                
+                <!--
+                <Image Source="curso_horario">
+                    
+                </Image>
+                <Image Source="curso_docente">
+                    
+                </Image>
+                -->
+                    </StackLayout>
+                </ScrollView>
+            </StackLayout>
+
+            <StackLayout VerticalOptions="Center" Grid.Row="2" Grid.Column="0" Margin="30,0,30,10">
+                <Button Text="Voltar" CornerRadius="30"  Margin="10" BackgroundColor="#D6F3FF" Clicked="voltarinicio" TextColor="#8FACD5" HorizontalOptions="FillAndExpand">
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Raleway-Light" />
+                            <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+            </StackLayout>
+            
+            
+        </Grid>
+        
+    </ContentPage.Content>
+</ContentPage>

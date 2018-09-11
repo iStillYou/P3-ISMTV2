@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ISMT.info_curso.Profissional" BackgroundImage="bg.png">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="20*" />
+                <RowDefinition Height="55*" />
+                <RowDefinition Height="25*" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+
+
+            <!-- Layout do ecrã -->
+            <AbsoluteLayout HorizontalOptions="FillAndExpand" Grid.Row="0" Grid.Column="0" VerticalOptions="Fill" >
+
+
+                <Image Source="menu.png" AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0.02,0.30, 0.2 ,0.2">
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="MasterDetailButton_Pressed" />
+                    </Image.GestureRecognizers>
+
+                </Image>
+                <!-- Logotipo ISMT -->
+                <Image AbsoluteLayout.LayoutFlags="All" AbsoluteLayout.LayoutBounds="0.5, 0.55, 0.50, 0.50"
+            Source="logotipo.png" Aspect="AspectFit" />
+
+
+
+            </AbsoluteLayout>
+            <ScrollView HorizontalOptions="Fill" Grid.Row="1" Grid.Column="0" Margin="20,0,20,0">
+
+                <StackLayout>
+                    <Label Text="Saídas Profissionais" FontSize="14"  TextColor="White" Margin="0,20,0,0">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Light" />
+                                <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+
+                    <Label Text="Saídas"  FontSize="14" TextColor="White" HorizontalTextAlignment="Start">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Light" />
+                                <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+
+                    <BoxView HeightRequest="1" HorizontalOptions="Fill" Color="#DCDCDC" Margin="0,10,0,10"/>
+
+                    <Label TextColor="White" HorizontalOptions="Start" Text="No final do 1º ciclo de estudos da licenciatura em Multimédia, os estudantes ficam habilitados para o exercício das diversas novas profissões que garantem a articulação harmoniosa entre os domínios da Comunicação, da Informática e do Design. Estas profissões, em verdadeiro e imparável crescimento, são das mais importantes e essenciais no contexto da atual Sociedade do Conhecimento e da Informação."
+                       FontSize="12" Margin="10,0,0,0">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Light" />
+                                <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+
+                    <Label TextColor="White" HorizontalTextAlignment="Start" HorizontalOptions="StartAndExpand" Text="Web designer.&#10;
+&#10;Direção de projetos na área dos sistemas de informação, especificamente na produção e edição multimedia (internet, suportes digitais, publicações online, ...)&#10;
+&#10;Direção gráfica e de produção de imagem.&#10;
+&#10;Centros de Informática e de Meios Audiovisuais.&#10;
+&#10;Departamentos de edição de imagem e som em empresas produtoras de audiovisuais.&#10;
+&#10;Departamentos de criação gráfica para écran (incluindo TV e vídeo)&#10;
+&#10;Departamentos criativos em empresas de publicidade.&#10;
+&#10;Centros de Informática e de Meios Audiovisuais.&#10;
+&#10;E-learning&#10;
+&#10;Ensino no domínio das TIC&#10;
+&#10;Profissionais liberais na área da comunicação multimédia.
+"
+                       FontSize="12" Margin="20,0,0,0">
+                        <Label.FontFamily>
+                            <OnPlatform x:TypeArguments="x:String">
+                                <On Platform="iOS" Value="Raleway-Light" />
+                                <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                            </OnPlatform>
+                        </Label.FontFamily>
+                    </Label>
+
+                </StackLayout>
+            </ScrollView>
+
+            <!-- Botão voltar-->
+            <StackLayout VerticalOptions="Center" Grid.Row="2" Grid.Column="0" Margin="0">
+                <Button Text="Voltar" CornerRadius="30" Margin="10" BackgroundColor="#D6F3FF" HorizontalOptions="FillAndExpand" Clicked="voltarinicio" TextColor="#8FACD5" >
+                    <Button.FontFamily>
+                        <OnPlatform x:TypeArguments="x:String">
+                            <On Platform="iOS" Value="Raleway-Light" />
+                            <On Platform="Android" Value="Raleway-Light.ttf#Raleway-Light" />
+                        </OnPlatform>
+                    </Button.FontFamily>
+                </Button>
+            </StackLayout>
+
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
